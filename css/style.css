@@ -357,6 +357,16 @@ img {
     color: #2e7d32;
 }
 
+.venue-status.rr {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.venue-status.submitted {
+    background: #e3f2fd;
+    color: #1565c0;
+}
+
 .paper-links {
     font-size: 0.88rem;
     margin-top: 0.3rem;
