@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Victor Rangel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="description" content="Victor Rangel - Curriculum Vitae">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Victor Rangel</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1 class="page-title">Curriculum Vitae</h1>
+
+        <div class="cv-download">
+            <a href="files/cv_victor_rangel.pdf" class="btn" target="_blank">
+                <i class="fas fa-file-pdf"></i> Download CV (English)
+            </a>
+        </div>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <span class="cv-entry-title">M.A. in Public Policy</span>
+                    <span class="cv-entry-date">2024 &ndash; Present</span>
+                </div>
+                <p class="cv-entry-institution">Insper, S&atilde;o Paulo, Brazil</p>
+            </div>
+            <div class="cv-entry">
+                <div class="cv-entry-header">
+                    <span class="cv-entry-title">B.A. in Economics</span>
+                    <span class="cv-entry-date"></span>
+                </div>
+                <p class="cv-entry-institution"></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Research Interests</h2>
+            <p>Applied Microeconometrics &middot; Causal Inference &middot; Large Language Models &middot; Public Policy Evaluation &middot; Political Science &amp; Political Economy</p>
+        </section>
+
+        <section class="section">
+            <h2>Publications</h2>
+            <div class="cv-entry">
+                <p>"Economic conditions and voting behavior" (with F. Barros, G. Correa-da-Silva, V. Pinho Neto). <em>Public Choice</em>, forthcoming, 2025.</p>
+            </div>
+            <div class="cv-entry">
+                <p>"Assessing political bias and value misalignment in generative artificial intelligence" (with F. Motoki, V. Pinho Neto). <em>Journal of Economic Behavior and Organization</em>, 2025.</p>
+            </div>
+            <div class="cv-entry">
+                <p>"Natural disasters and financial technology adoption" (with F. Barros, B. Delalibera, V. Pinho Neto). <em>Economics Letters</em>, 2025.</p>
+            </div>
+            <div class="cv-entry">
+                <p>"Government, taxation and economic complexity" (with F. Barros, L. Brotherhood, F. Gomes). <em>Applied Economics Letters</em>, 2024.</p>
+            </div>
+            <div class="cv-entry">
+                <p>"More human than human: measuring ChatGPT political bias" (with F. Motoki, V. Pinho Neto). <em>Public Choice</em>, 198(1), 3&ndash;23, 2024.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <p>
+                <i class="fas fa-envelope"></i> <a href="mailto:victorrsr@al.insper.edu.br">victorrsr@al.insper.edu.br</a><br>
+                <i class="fab fa-github"></i> <a href="https://github.com/vr-rodrigues" target="_blank">github.com/vr-rodrigues</a><br>
+                <i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/vr-rodrigues" target="_blank">linkedin.com/in/vr-rodrigues</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Victor Rangel. Hosted on <a href="https://github.com/vr-rodrigues/vr-rodrigues.github.io" target="_blank">GitHub Pages</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
