@@ -246,6 +246,18 @@ img {
     display: inline-block;
 }
 
+.year-heading {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.04em;
+    margin: 1.4rem 0 0.2rem;
+}
+
+.section h2 + .year-heading {
+    margin-top: 0;
+}
+
 .page-title {
     font-family: var(--font-serif);
     font-size: 2rem;
