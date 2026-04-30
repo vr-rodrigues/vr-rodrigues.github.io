@@ -403,6 +403,30 @@ img {
     margin-bottom: 0.45rem;
 }
 
+.featured-item:has(.paper-links) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 0.65rem;
+    align-items: baseline;
+}
+
+.featured-item:has(.paper-links) .paper-links {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+}
+
+.featured-item:has(.paper-links) .featured-title {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.featured-item:has(.paper-links) .featured-meta,
+.featured-item:has(.paper-links) .featured-description,
+.featured-item:has(.paper-links) .paper-tags {
+    grid-column: 1 / -1;
+}
+
 .media-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -476,6 +500,19 @@ img {
     border-bottom: none;
 }
 
+.paper:has(.paper-links) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 0.65rem;
+    align-items: baseline;
+}
+
+.paper:has(.paper-links) .paper-links {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+}
+
 .paper-title {
     font-family: var(--font-serif);
     font-size: 1.05rem;
@@ -483,6 +520,19 @@ img {
     color: var(--color-text);
     margin-bottom: 0.2rem;
     line-height: 1.4;
+}
+
+.paper:has(.paper-links) .paper-title {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.paper:has(.paper-links) .paper-authors,
+.paper:has(.paper-links) .paper-venue,
+.paper:has(.paper-links) .paper-description,
+.paper:has(.paper-links) .paper-tags,
+.paper:has(.paper-links) .paper-note {
+    grid-column: 1 / -1;
 }
 
 .paper-authors {
@@ -552,6 +602,9 @@ img {
 .paper-links {
     font-size: 0.88rem;
     margin-top: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
 }
 
 .paper-links a {
@@ -563,7 +616,6 @@ img {
     font-weight: 600;
     text-transform: lowercase;
     letter-spacing: 0.02em;
-    margin-right: 0.3rem;
     transition: background 0.2s;
 }
 
@@ -762,6 +814,24 @@ footer a:hover {
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
+    }
+
+    .paper:has(.paper-links),
+    .featured-item:has(.paper-links) {
+        grid-template-columns: 1fr;
+    }
+
+    .paper:has(.paper-links) .paper-links,
+    .featured-item:has(.paper-links) .paper-links {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 0.25rem;
+    }
+
+    .paper:has(.paper-links) .paper-title,
+    .featured-item:has(.paper-links) .featured-title {
+        grid-column: 1;
+        grid-row: 2;
     }
 
     .hero-image {
