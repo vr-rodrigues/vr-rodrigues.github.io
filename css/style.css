@@ -589,6 +589,11 @@ img {
     color: #2e7d32;
 }
 
+.venue-status.accepted {
+    background: #eef5ff;
+    color: #0d47a1;
+}
+
 .venue-status.rr {
     background: #fff3e0;
     color: #e65100;
