@@ -258,6 +258,64 @@ img {
     margin-top: 0;
 }
 
+.research-summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.research-summary::-webkit-details-marker {
+    display: none;
+}
+
+.research-summary h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.research-summary:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
+}
+
+.research-group:not([open]) .research-summary {
+    margin-bottom: 0;
+}
+
+.research-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.research-toggle::before {
+    content: "-";
+}
+
+.research-group:not([open]) .research-toggle::before {
+    content: "+";
+}
+
+.research-summary + .year-heading {
+    margin-top: 0;
+}
+
 .page-title {
     font-family: var(--font-serif);
     font-size: 2rem;
@@ -351,6 +409,13 @@ img {
     font-size: 0.92rem;
     color: var(--color-text-light);
     margin-bottom: 0.2rem;
+}
+
+.paper-description {
+    font-size: 0.92rem;
+    color: var(--color-text-light);
+    line-height: 1.5;
+    margin: 0.35rem 0 0.25rem;
 }
 
 .venue-status {
