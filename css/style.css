@@ -687,8 +687,9 @@ img {
 }
 
 .venue-status.published {
-    background: #fff1f0;
-    color: var(--color-primary);
+    background: #f0f0f0;
+    border: 1px solid #d8d8d8;
+    color: var(--color-text);
 }
 
 .venue-status.accepted {
