@@ -638,6 +638,12 @@ img {
     margin-bottom: 0.2rem;
 }
 
+.paper-venue em,
+.featured-meta em {
+    color: var(--color-text);
+    font-weight: 650;
+}
+
 .paper-description {
     font-size: 0.92rem;
     color: var(--color-text-light);
@@ -678,6 +684,11 @@ img {
 .venue-status.forthcoming {
     background: #e8f5e9;
     color: #2e7d32;
+}
+
+.venue-status.published {
+    background: #fff1f0;
+    color: var(--color-primary);
 }
 
 .venue-status.accepted {
