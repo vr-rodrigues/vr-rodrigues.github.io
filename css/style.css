@@ -14,7 +14,7 @@
     --color-primary-light: #a01010;
     --color-text: #2d2d2d;
     --color-text-light: #555;
-    --color-text-muted: #888;
+    --color-text-muted: #666;
     --color-bg: #fafafa;
     --color-white: #fff;
     --color-border: #e0e0e0;
@@ -51,12 +51,38 @@ a:hover {
     text-decoration: underline;
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* --- Navigation --- */
+.skip-link {
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 1000;
+    padding: 0.55rem 0.8rem;
+    color: #fff;
+    background: var(--color-primary);
+    border-radius: 4px;
+    transform: translateY(-150%);
+    transition: transform 0.2s;
+}
+
+.skip-link:focus {
+    color: #fff;
+    transform: translateY(0);
+    text-decoration: none;
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -212,7 +238,11 @@ img {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 5px;
 }
@@ -262,6 +292,10 @@ img {
 .hero-image {
     flex-shrink: 0;
     width: 220px;
+}
+
+.hero-image picture {
+    display: block;
 }
 
 .hero-image img {
@@ -836,7 +870,7 @@ footer a:hover {
 
 .footer-updated {
     margin-top: 0.25rem;
-    color: #777;
+    color: #aaa;
 }
 
 /* --- Responsive --- */
@@ -903,6 +937,11 @@ footer a:hover {
         padding-top: 0.7rem;
     }
 
+    .nav-links .lang-link {
+        width: 44px;
+        height: 44px;
+    }
+
     .nav-links a {
         font-size: 1rem;
     }
@@ -915,6 +954,18 @@ footer a:hover {
     .updates-list li {
         flex-direction: column;
         gap: 0.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
 

@@ -13,26 +13,57 @@
     <link rel="canonical" href="https://vrangel.com.br/">
     <link rel="alternate" hreflang="en" href="https://vrangel.com.br/">
     <link rel="alternate" hreflang="pt-BR" href="https://vrangel.com.br/index-pt.html">
+    <link rel="alternate" hreflang="x-default" href="https://vrangel.com.br/">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <meta name="theme-color" content="#1a1a1a">
     <meta property="og:title" content="Victor Rangel">
     <meta property="og:description" content="Economist working on causal inference, public policy, political economy, and large language models.">
-    <meta property="og:image" content="https://vrangel.com.br/img/profile.jpg">
+    <meta property="og:image" content="https://vrangel.com.br/img/og-card.jpg">
+    <meta property="og:image:alt" content="Victor Rangel, Economist">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://vrangel.com.br/">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Victor Rangel - Economist">
     <meta name="twitter:description" content="Economist working on causal inference, public policy, political economy, and large language models.">
-    <meta name="twitter:image" content="https://vrangel.com.br/img/profile.jpg">
+    <meta name="twitter:image" content="https://vrangel.com.br/img/og-card.jpg">
+    <meta name="twitter:image:alt" content="Victor Rangel, Economist">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://vrangel.com.br/#victor-rangel",
+        "name": "Victor Rangel",
+        "url": "https://vrangel.com.br/",
+        "image": "https://vrangel.com.br/img/profile.jpg",
+        "jobTitle": "Economist",
+        "description": "Economist working on causal inference, public policy, political economy, and large language models.",
+        "alumniOf": [
+            {"@type": "CollegeOrUniversity", "name": "Insper"},
+            {"@type": "CollegeOrUniversity", "name": "FUCAPE Business School"}
+        ],
+        "sameAs": [
+            "https://github.com/vr-rodrigues",
+            "https://linkedin.com/in/vr-rodrigues",
+            "https://www.instagram.com/econometriafacil/",
+            "https://scholar.google.com.br/citations?user=U4JuEFwAAAAJ&hl=pt-BR"
+        ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-brand">Victor Rangel</a>
-            <button class="nav-toggle" aria-label="Toggle navigation">
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
                 <span></span><span></span><span></span>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="index.html" class="active">About</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="#teaching-media">Teaching &amp; Media</a></li>
@@ -45,10 +76,13 @@
         </div>
     </nav>
 
-    <main class="container">
+    <main class="container" id="main-content">
         <section class="hero">
             <div class="hero-image">
-                <img src="img/profile.jpg" alt="Victor Rangel">
+                <picture>
+                    <source srcset="img/profile.webp" type="image/webp">
+                    <img src="img/profile.jpg" alt="Victor Rangel" width="220" height="220" decoding="async" fetchpriority="high">
+                </picture>
             </div>
             <div class="hero-content">
                 <h1>Victor Rangel</h1>
@@ -59,21 +93,20 @@
                     I have professional and academic experience in data analysis, focusing on applied econometrics and machine learning.
                 </p>
                 <p>
-                    I spend most of my days running acceptably biased OLS models
-                    and, additionally, I work as a science communicator and teach
-                    econometrics on my Instagram profile
+                    I spend most of my days running acceptably biased OLS models.
+                    I also communicate science and teach econometrics through
                     <a href="https://www.instagram.com/econometriafacil/" target="_blank">@econometriafacil</a>
-                    (200,000+ followers). I also write the
+                    (200,000+ followers), and write the
                     <a href="https://www1.folha.uol.com.br/colunas/econometria-facil/" target="_blank">Econometria F&aacute;cil</a>
-                    column at <em>Folha de S&atilde;o Paulo</em>.
+                    column at <em>Folha de S.Paulo</em>.
                 </p>
 
                 <div class="social-links">
-                    <a href="mailto:victorrsr@al.insper.edu.br" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/vr-rodrigues" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/vr-rodrigues" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/econometriafacil/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://scholar.google.com.br/citations?user=U4JuEFwAAAAJ&amp;hl=pt-BR" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:victorrsr@al.insper.edu.br" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://github.com/vr-rodrigues" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/vr-rodrigues" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/econometriafacil/" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://scholar.google.com.br/citations?user=U4JuEFwAAAAJ&amp;hl=pt-BR" target="_blank" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
@@ -129,10 +162,11 @@
                     <p class="paper-links"><a href="https://doi.org/10.1016/j.econlet.2024.112092" target="_blank">paper</a></p>
                 </article>
                 <article class="featured-item">
-                    <p class="featured-title">Do Health Policy Conclusions Survive Modern DiD? Re-estimating TWFE Studies</p>
-                    <p class="featured-meta">Work in progress</p>
-                    <p class="featured-description">Revisits health-policy evidence using modern difference-in-differences estimators.</p>
-                    <p class="paper-tags"><span>Causal Inference</span><span>Health Policy</span><span>DiD</span></p>
+                    <p class="featured-title">From Association to Explanation: Strengthening Research Design and Causal Reasoning in Accounting Scholarship</p>
+                    <p class="featured-meta"><em>Advances in Scientific and Applied Accounting (ASAA)</em>, 2026</p>
+                    <p class="featured-description">Shows how stronger research design can move accounting studies from association toward causal explanation.</p>
+                    <p class="paper-tags"><span>Research Design</span><span>Causal Inference</span><span>Accounting</span></p>
+                    <p class="paper-links"><a href="https://asaa.emnuvens.com.br/asaa/article/view/1334" target="_blank">paper</a></p>
                 </article>
             </div>
         </section>
@@ -165,32 +199,20 @@
             <h2>Recent Updates</h2>
             <ul class="updates-list">
                 <li>
-                    <span class="update-date">2026</span>
+                    <span class="update-date">Jul 2026</span>
+                    <span class="update-text">Completed an M.A. in Public Policy at Insper</span>
+                </li>
+                <li>
+                    <span class="update-date">May 2026</span>
                     <span class="update-text">"Environmental Enforcement and Abnormal Stock Returns" forthcoming in <em>Brazilian Review of Finance</em> and accepted at the XXVI Encontro Brasileiro de Finan&ccedil;as</span>
                 </li>
                 <li>
-                    <span class="update-date">2026</span>
-                    <span class="update-text">New column <a href="https://www1.folha.uol.com.br/colunas/econometria-facil/" target="_blank">Econometria F&aacute;cil</a> at <em>Folha de S&atilde;o Paulo</em></span>
-                </li>
-                <li>
-                    <span class="update-date">2026</span>
+                    <span class="update-date">May 2026</span>
                     <span class="update-text">"Masking the identification problem" forthcoming in <em>Journal of Comments and Replications in Economics</em></span>
                 </li>
                 <li>
-                    <span class="update-date">2026</span>
+                    <span class="update-date">May 2026</span>
                     <span class="update-text">"From Association to Explanation" published in <em>Advances in Scientific and Applied Accounting (ASAA)</em></span>
-                </li>
-                <li>
-                    <span class="update-date">2025</span>
-                    <span class="update-text">Insper published a <a href="https://www.insper.edu.br/pt/conteudos/politicas-publicas/artigo-de-mestrando-do-insper-sobre-vies-politico-do-chatgpt-torna-se-referencia" target="_blank">feature</a> on my research about ChatGPT political bias and science communication work</span>
-                </li>
-                <li>
-                    <span class="update-date">2025</span>
-                    <span class="update-text">"Economic conditions and voting behavior" published in <em>Public Choice</em></span>
-                </li>
-                <li>
-                    <span class="update-date">2025</span>
-                    <span class="update-text">"Assessing political bias and value misalignment in generative AI" published in <em>Journal of Economic Behavior and Organization</em></span>
                 </li>
             </ul>
         </section>
